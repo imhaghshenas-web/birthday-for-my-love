@@ -1,0 +1,15 @@
+<h2 id="typing"></h2>
+
+<script>
+const text="Happy Birthday Hasan 🤍";
+let i=0;
+
+function type(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(type,90);
+}
+}
+type();
+</script>
